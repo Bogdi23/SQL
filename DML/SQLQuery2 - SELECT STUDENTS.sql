@@ -1,14 +1,14 @@
---SQLQuery2 - SELECT STUDENTS.sql
+п»ї--SQLQuery2 - SELECT STUDENTS.sql
 USE PV_521_Import;
 
 SELECT 
-		--last_name AS	N'Фамилия',
-		--first_name	AS	N'Имя',
-		--middle_name	AS	N'Отчество',
-		[Студент]	=	FORMATMESSAGE(N'%s %s %s',Students.last_name,Students.first_name,Students.middle_name),
-		Students.birth_date		AS	N'Дата Рождения',
-		Groups.group_name		AS	N'Группа',
-		Directions.direction_name	AS	N'Направление обучения'
+		--last_name AS	N'Р¤Р°РјРёР»РёСЏ',
+		--first_name	AS	N'РРјСЏ',
+		--middle_name	AS	N'РћС‚С‡РµСЃС‚РІРѕ',
+		[РЎС‚СѓРґРµРЅС‚]	=	FORMATMESSAGE(N'%s %s %s',Students.last_name,Students.first_name,Students.middle_name),
+		Students.birth_date		AS	N'Р”Р°С‚Р° Р РѕР¶РґРµРЅРёСЏ',
+		Groups.group_name		AS	N'Р“СЂСѓРїРїР°',
+		Directions.direction_name	AS	N'РќР°РїСЂР°РІР»РµРЅРёРµ РѕР±СѓС‡РµРЅРёСЏ'
 FROM	Students, Groups, Directions
 WHERE	[group]		=	group_id
 AND		direction	=	direction_id

@@ -1,18 +1,18 @@
---SQLQuery2 - Agregation.sql
+п»ї--SQLQuery2 - Agregation.sql
 
 USE PV_521_Import;
 
 --SELECT
---			direction_name	AS	N'Направление обучения'
---		,	COUNT(group_id)	AS	N'Количество групп'
+--			direction_name	AS	N'РќР°РїСЂР°РІР»РµРЅРёРµ РѕР±СѓС‡РµРЅРёСЏ'
+--		,	COUNT(group_id)	AS	N'РљРѕР»РёС‡РµСЃС‚РІРѕ РіСЂСѓРїРї'
 --FROM	Directions,Groups
 --WHERE	direction	=	direction_id
 --GROUP BY	direction_name
 --;
 
 SELECT
-				direction_name	AS	N'Направление обучения'
-			,	COUNT(stud_id)	AS	N'Количество студентов'
+				direction_name	AS	N'РќР°РїСЂР°РІР»РµРЅРёРµ РѕР±СѓС‡РµРЅРёСЏ'
+			,	COUNT(stud_id)	AS	N'РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СѓРґРµРЅС‚РѕРІ'
 FROM	Students, Groups, Directions
 WHERE	[group]		=	group_id
 AND		direction	=	direction_id
