@@ -1,4 +1,5 @@
 ﻿--SQLQuery1-INSERT Schedule.sql
+
 USE PV_521_Import;
 SET DATEFIRST 1;	--Для правильной интерпретации дней недели (Пн-1, Вт-2, ..., Вс-7)
 
