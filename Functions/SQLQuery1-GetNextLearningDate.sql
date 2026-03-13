@@ -1,4 +1,4 @@
---SQLQuery1-GetNextLearningDate.sql
+﻿--SQLQuery1-GetNextLearningDate.sql
 USE PV_521_Import;
 SET DATEFIRST 1;
 GO
